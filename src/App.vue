@@ -669,6 +669,7 @@ const resumePath = "/resume/Talha-Abbas-Full-Stack-Developer-Resume.pdf";
                   <div class="w-10 h-10 bg-surface-container-highest rounded-lg flex items-center justify-center">
                     <span class="material-symbols-outlined text-secondary">view_quilt</span>
                   </div>
+                  
                   <div>
                     <p class="font-label-md text-label-md text-on-surface">Vue.js</p>
                     <p class="text-[10px] text-on-surface-variant">Frontend</p>
