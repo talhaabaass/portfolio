@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #031427;
+  color: #d3e4fe;
+  -webkit-font-smoothing: antialiased;
+  cursor: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* ---- glass surfaces (merged from all pages) ---- */
+.glass-card,
+.glass-panel {
+  background: rgba(16, 32, 52, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.glass-card:hover {
+  border-color: rgba(78, 222, 163, 0.3);
+}
+
+.nav-glass {
+  background: rgba(3, 20, 39, 0.8);
+  backdrop-filter: blur(20px);
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at top right, rgba(0, 165, 114, 0.15), transparent 40%),
+    radial-gradient(circle at bottom left, rgba(0, 67, 149, 0.15), transparent 40%);
+}
+
+.text-gradient,
+.primary-gradient-text {
+  background: linear-gradient(135deg, #bec6e0 0%, #4edea3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #00a572 0%, #357df1 100%);
+}
+
+.skill-progress-bar {
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-line {
+  background: linear-gradient(180deg, transparent 0%, #4edea3 15%, #4edea3 85%, transparent 100%);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #031427;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #26364a;
+  border-radius: 10px;
+}
+
+/* ---- cursor-follow interactions (new) ---- */
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 9999px;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #4edea3;
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(78, 222, 163, 0.5);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+.cursor-ring.is-active {
+  width: 64px;
+  height: 64px;
+  background: rgba(78, 222, 163, 0.08);
+  border-color: rgba(78, 222, 163, 0.8);
+}
+
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  pointer-events: none;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(78, 222, 163, 0.08) 0%, transparent 60%);
+  will-change: transform;
+}
+
+/* ---- hero background grid ---- */
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(78, 222, 163, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(78, 222, 163, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ---- animated gradient border around profile photo ---- */
+.photo-ring {
+  background: conic-gradient(from var(--ring-angle, 0deg), #4edea3, #357df1, #adc6ff, #4edea3);
+  animation: spin-ring 6s linear infinite;
+}
+@keyframes spin-ring {
+  to {
+    --ring-angle: 360deg;
+  }
+}
+@property --ring-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* ---- 360° skill carousel ---- */
+.carousel-scene {
+  position: relative;
+  height: 220px;
+  perspective: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-ring {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  transform-style: preserve-3d;
+}
+.carousel-item {
+  position: absolute;
+  top: -70px;
+  left: -90px;
+  width: 180px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  backface-visibility: visible;
+  text-align: center;
+  padding: 12px;
+}
+.carousel-floor {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80%;
+  height: 40px;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse at center, rgba(78, 222, 163, 0.12) 0%, transparent 70%);
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+  .cursor-dot,
+  .cursor-ring,
+  .cursor-glow {
+    display: none;
+  }
+}
