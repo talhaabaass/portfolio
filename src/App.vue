@@ -660,7 +660,7 @@ const resumePath = "/resume/Talha-Abbas-Full-Stack-Developer-Resume.pdf";
 
               <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-[2rem] p-[3px] photo-ring">
                 <div class="w-full h-full rounded-[calc(2rem-3px)] overflow-hidden glass-card">
-                  <img src="/D:\vue-portfolio\public\WhatsApp Image 2026-01-05 at 1.10.05 PM.jpeg" alt="Portrait" class="w-full h-full object-cover" />
+                  <img src="\images\WhatsApp Image 2026-01-05 at 1.10.05 PM.jpeg" alt="Portrait" class="w-full h-full object-cover" />
                 </div>
               </div>
 
