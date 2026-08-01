@@ -601,7 +601,7 @@ const resumePath = "/resume/Talha-Abbas-Full-Stack-Developer-Resume.pdf";
       <div class="flex justify-between items-center px-gutter max-w-container-max mx-auto h-20">
         <div class="flex items-center gap-2 font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
           <span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_12px_rgba(78,222,163,0.8)]"></span>
-          DevMastery
+          Talha Abbas 
         </div>
         <div class="hidden md:flex items-center gap-8">
           <a @click.prevent="scrollToId('work')" href="#work" class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors px-3 py-1 rounded">Work</a>
@@ -669,7 +669,7 @@ const resumePath = "/resume/Talha-Abbas-Full-Stack-Developer-Resume.pdf";
                   <div class="w-10 h-10 bg-surface-container-highest rounded-lg flex items-center justify-center">
                     <span class="material-symbols-outlined text-secondary">view_quilt</span>
                   </div>
-                  
+
                   <div>
                     <p class="font-label-md text-label-md text-on-surface">Vue.js</p>
                     <p class="text-[10px] text-on-surface-variant">Frontend</p>
@@ -1325,7 +1325,7 @@ const resumePath = "/resume/Talha-Abbas-Full-Stack-Developer-Resume.pdf";
       <div class="lg:col-span-4">
 
         <div class="font-headline-xl text-headline-xl font-extrabold text-surface-tint mb-4">
-          DevMastery
+          Talha Abbas
         </div>
 
 
@@ -1536,7 +1536,7 @@ const resumePath = "/resume/Talha-Abbas-Full-Stack-Developer-Resume.pdf";
 
 
       <p class="font-label-md text-label-md text-on-surface-variant text-center md:text-left">
-        © 2026 DevMastery. Crafted with precision.
+        © 2026 Talha Abbas. Crafted with precision.
       </p>
 
 
