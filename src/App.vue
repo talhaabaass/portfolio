@@ -363,8 +363,8 @@ const contactInfo = {
   description:
     "Have a project idea or need a reliable Full Stack Developer? I'm available for freelance projects, SaaS development, eCommerce platforms, custom web applications, and long-term collaborations. Share your requirements and I'll get back to you as soon as possible.",
 
-  email: "your-email@example.com",
-  phone: "+92 XXX XXXXXXX",
+  email: "talhaabaass@gmail.com",
+  phone: "+92 3284334815",
   location: "Pakistan",
 
   availability:
@@ -372,6 +372,7 @@ const contactInfo = {
 };
 const contactSection = {
   badge: "Get In Touch",
+  
 
   heading: "Let's Build Something Amazing Together",
 
@@ -632,6 +633,7 @@ const resumePath = "/resume/Talha-Abbas-Full-Stack-Developer-Resume.pdf";
               Full Stack <br />
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary via-secondary to-tertiary">Web Developer</span>
             </h1>
+           
             <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-4">
               I build resilient, high-performance web applications with Laravel, Vue.js, and Flutter — turning complex requirements into elegant, working products.
             </p>
