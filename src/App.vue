@@ -386,6 +386,7 @@ const contactSection = {
       value: "talhaabaass@gmail.com",
       link: "mailto:your-email@example.com",
     },
+
     {
       icon: "phone",
       title: "Phone",
@@ -414,6 +415,7 @@ const contactSection = {
     "Admin Dashboard Systems",
     "Database Architecture",
   ],
+  
 
   form: {
     title: "Start Your Project",
