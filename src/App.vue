@@ -383,14 +383,14 @@ const contactSection = {
     {
       icon: "mail",
       title: "Email",
-      value: "your-email@example.com",
+      value: "talhaabaass@gmail.com",
       link: "mailto:your-email@example.com",
     },
     {
       icon: "phone",
       title: "Phone",
-      value: "+92 XXX XXXXXXX",
-      link: "tel:+92XXXXXXXXXX",
+      value: "+92 3284334815",
+      link: "tel:+923284334815",
     },
     {
       icon: "location",
