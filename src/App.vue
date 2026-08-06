@@ -393,11 +393,11 @@ const contactSection = {
       value: "+92 3284334815",
       link: "tel:+923284334815",
     },
-    {
-      icon: "location",
-      title: "Location",
-      value: "Pakistan",
-    },
+   {
+  icon: "Globe",
+  title: "Location",
+  value: "Pakistan",
+},
     {
       icon: "clock",
       title: "Availability",
